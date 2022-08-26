@@ -1,4 +1,317 @@
-.App {
-  text-align: center;
+.navbar-container {
+  padding: 1rem 0;
+  border-bottom: 1px solid #8400ec;
+}
+
+.navbar-container .navbar {
+  width: 70vw;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbar-container .navbar .nav-logo {
+  height: 35px;
+  width: 35px;
+  background: #8400ec;
+}
+
+.navbar-container .navbar .nav-brand {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #8400ec;
+}
+
+.home-container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 4rem 0;
+}
+
+.home-container .home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-container .home .home-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.home-container .home .home-left .home-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+}
+
+.home-container .home .home-left .home-title .title-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.home-container .home .home-left .home-title .title-left .title-left-top {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.home-container .home .home-left .home-title .title-left .title-left-bottom {
+  line-height: 1;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.home-container .home .home-left .home-title .title-right .title-right-top {
+  font-weight: 900;
+  font-size: 5rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-container .home .home-left .home-title .title-right .title-right-top:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.home-container .home .home-left .home-title .title-right .title-right-bottom {
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.home-container .home .home-left .home-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+  border: 1px solid #8400ec;
+  border-radius: 10px;
+  padding: 0.8rem 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #8400ec;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.home-container .home .home-left .home-btn:hover {
+  background: #8400ec;
+  color: #1b1b1b;
+}
+
+.home-container .home .home-left .home-btn svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  fill: #8400ec;
+}
+
+.home-container .home .home-right {
+  height: 50rem;
+  width: 50rem;
+  background: url(../assets/mine.jpeg);
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.about-container {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.about-container .about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.about-container .about .about-nav {
+  padding: 1rem 4rem;
+  border: 1px solid #8400ec;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8400ec;
+}
+
+.about-container .about .about-cards-container .about-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card {
+  background: #8400ec;
+  width: 320px;
+  height: 350px;
+  border-radius: 10px;
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-top {
+  height: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-top .about-card-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-top .about-card-title {
+  font-weight: 900;
+  font-size: 2.5rem;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-top .about-card-sub {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-bottom a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-bottom a:hover {
+  text-decoration: underline;
+}
+
+.know-container {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.know-container .know {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 4rem;
+}
+
+.know-container .know .know-nav {
+  padding: 1rem 4rem;
+  border: 1px solid #8400ec;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8400ec;
+}
+
+.know-container .know .know-tags-container .know-tags {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.know-container .know .know-tags-container .know-tags .tag {
+  padding: 0.2rem 1.5rem;
+  background: #8400ec;
+  border-radius: 50px;
+}
+
+.use-container {
+  width: 70vw;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.use-container .use .use-nav {
+  padding: 1rem 4rem;
+  border: 1px solid #8400ec;
+  border-radius: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #8400ec;
+}
+
+.build-container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+.footer-container {
+  width: 70vw;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 /*# sourceMappingURL=App.css.map */
