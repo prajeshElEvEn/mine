@@ -4,7 +4,6 @@ import Footer from './components/Footer';
 import Home from './components/Home';
 import Know from './components/Know';
 import Navbar from './components/Navbar';
-import Use from './components/Use';
 import './styles/App.css';
 
 function App() {
@@ -14,7 +13,6 @@ function App() {
       <Home />
       <About />
       <Know />
-      <Use />
       <Build />
       <Footer />
     </div>
