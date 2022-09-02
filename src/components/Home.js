@@ -49,7 +49,8 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div className='about-container'
+            <div
+                className='about-container'
                 ref={ref}
             >
                 <div className='about'>

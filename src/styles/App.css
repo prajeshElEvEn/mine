@@ -193,7 +193,6 @@
   width: 350px;
   height: 400px;
   border-radius: 10px;
-  padding: 1rem 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -225,6 +224,7 @@
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: end;
+  padding: 0 1rem;
 }
 
 .about-container .about .about-cards-container .about-cards .about-card .about-card-top .about-card-text {
@@ -240,6 +240,10 @@
 .about-container .about .about-cards-container .about-cards .about-card .about-card-top .about-card-sub {
   font-weight: 500;
   font-size: 1.2rem;
+}
+
+.about-container .about .about-cards-container .about-cards .about-card .about-card-bottom {
+  padding: 1rem;
 }
 
 .about-container .about .about-cards-container .about-cards .about-card .about-card-bottom a {
@@ -302,6 +306,7 @@
   -webkit-transition: all 0.1s ease-in-out;
   transition: all 0.1s ease-in-out;
   cursor: context-menu;
+  font-size: 1rem;
 }
 
 .know-container .know .know-tags-container .know-tags .tag:hover {
@@ -447,7 +452,7 @@
   background: linear-gradient(45deg, #1b1b1b 0%, rgba(181, 130, 196, 0.398197) 45%, #8400ec 100%);
   width: 100%;
   border-radius: 10px;
-  padding: 4rem;
+  padding: 4rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -512,5 +517,109 @@
 .footer-container .footer .socials .social a:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-container .navbar {
+    width: 94vw;
+  }
+  .home-container {
+    width: 94vw;
+  }
+  .home-container .home {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 1rem;
+  }
+  .home-container .home .home-left {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .home-container .home .home-left .home-title .title-left .title-left-top {
+    font-size: 1.5rem;
+  }
+  .home-container .home .home-left .home-title .title-left .title-left-bottom {
+    font-size: 3rem;
+  }
+  .home-container .home .home-left .home-title .title-right .title-right-top {
+    font-size: 4rem;
+  }
+  .home-container .home .home-left .home-title .title-right .title-right-bottom {
+    font-size: 1.2rem;
+  }
+  .home-container .home .home-right {
+    height: 200px;
+    width: 200px;
+  }
+  .about-container {
+    width: 94vw;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .about-container .about .about-nav {
+    font-size: 1.5rem;
+  }
+  .about-container .about .about-cards-container .about-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .about-container .about .about-cards-container .about-cards .about-card {
+    width: 100%;
+  }
+  .know-container {
+    width: 94vw;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .know-container .know .know-nav {
+    font-size: 1.5rem;
+  }
+  .know-container .know .know-tags-container .know-tags {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .know-container .know .know-tags-container .know-tags .tag {
+    padding: 0.1rem 0.8rem;
+  }
+  .build-container {
+    width: 94vw;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .build-container .build .build-nav {
+    font-size: 1.5rem;
+  }
+  .build-container .build .build-cards-container .build-cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+  }
+  .build-container .build .build-cards-container .build-cards .build-card {
+    width: 100%;
+  }
+  .footer-container {
+    width: 94vw;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .footer-container .footer .footer-nav {
+    font-size: 1.5rem;
+  }
+  .footer-container .footer .contact a {
+    font-size: 2rem;
+    padding: 0.2rem 2rem;
+  }
 }
 /*# sourceMappingURL=App.css.map */

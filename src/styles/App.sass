@@ -106,7 +106,7 @@
                     width: 350px
                     height: 400px
                     border-radius: 10px
-                    padding: 1rem 2rem
+                    // padding: 1rem 2rem
                     display: flex
                     flex-direction: column
                     justify-content: space-between
@@ -118,6 +118,7 @@
                         display: flex
                         flex-direction: column
                         justify-content: end
+                        padding: 0 1rem
                         .about-card-text
                             font-weight: 700
                             font-size: 1.5rem
@@ -128,6 +129,7 @@
                             font-weight: 500
                             font-size: 1.2rem
                     .about-card-bottom
+                        padding: 1rem
                         a
                             text-decoration: none
                             color: #8400ec
@@ -165,6 +167,7 @@
                     border-radius: 50px
                     transition: all 0.1s ease-in-out
                     cursor: context-menu
+                    font-size: 1rem
                     &:hover
                         transform: scale(1.1)
 
@@ -244,7 +247,7 @@
         background: linear-gradient(45deg, rgba(27,27,27,1) 0%, rgba(181,130,196,0.3981967787114846) 45%, rgba(132,0,236,1) 100%)
         width: 100%
         border-radius: 10px
-        padding: 4rem
+        padding: 4rem 0
         display: flex
         flex-direction: column
         align-items: center
@@ -280,3 +283,88 @@
                         transform: scale(1.1)
                     svg
         .copy
+
+
+@media screen and (max-width: 768px)
+    .navbar-container
+        .navbar
+            width: 94vw
+    .home-container
+        width: 94vw
+        .home
+            flex-direction: column-reverse
+            gap: 1rem
+            .home-left
+                justify-content: center
+                .home-title
+                    .title-left
+                        .title-left-top
+                            font-size: 1.5rem
+                        .title-left-bottom
+                            font-size: 3rem
+                    .title-right
+                        .title-right-top
+                            font-size: 4rem
+                        .title-right-bottom
+                            font-size: 1.2rem
+                .home-btn
+
+            .home-right
+                height: 200px
+                width: 200px
+
+    .about-container
+        width: 94vw
+        height: auto
+        padding-bottom: 4rem
+        .about
+            .about-nav
+                font-size: 1.5rem
+            .about-cards-container
+                .about-cards
+                    flex-direction: column
+                    gap: 1rem
+                    .about-card
+                        width: 100%
+                        // padding: 0
+    .know-container
+        width: 94vw
+        height: auto
+        padding-bottom: 4rem
+        .know
+            .know-nav
+                font-size: 1.5rem
+            .know-tags-container
+                .know-tags
+                    align-items: center
+                    justify-content: center
+                    .tag
+                        // width: 300px
+                        padding: 0.1rem 0.8rem
+
+    .build-container
+        width: 94vw
+        height: auto
+        padding-bottom: 4rem
+        .build
+            .build-nav
+                font-size: 1.5rem
+            .build-cards-container
+                .build-cards
+                    flex-direction: column
+                    gap: 1rem
+                    .build-card
+                        width: 100%
+
+    .footer-container
+        width: 94vw
+        height: auto
+        padding-bottom: 4rem
+        .footer
+            .footer-nav
+                font-size: 1.5rem
+            .contact
+                a
+                    font-size: 2rem
+                    padding: 0.2rem 2rem
+
