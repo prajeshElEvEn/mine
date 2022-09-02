@@ -488,8 +488,8 @@
 }
 
 .footer-container .footer .contact a:hover {
-  -webkit-transform: translateY(-6px);
-          transform: translateY(-6px);
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
   border-bottom: 1px solid #8400ec;
 }
 

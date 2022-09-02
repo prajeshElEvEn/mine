@@ -31,12 +31,12 @@ const Home = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='home-btn'>
-                            <div className='home-btn-text'
-                                onClick={() => {
-                                    scrollToAbout()
-                                }}
-                            >
+                        <div className='home-btn'
+                            onClick={() => {
+                                scrollToAbout()
+                            }}
+                        >
+                            <div className='home-btn-text'>
                                 Get in touch
                             </div>
                             <svg width="28" height="28" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
