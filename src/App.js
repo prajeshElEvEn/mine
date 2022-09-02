@@ -1,4 +1,3 @@
-import About from './components/About';
 import Build from './components/Build';
 import Footer from './components/Footer';
 import Home from './components/Home';
@@ -11,7 +10,6 @@ function App() {
     <div className='App'>
       <Navbar />
       <Home />
-      <About />
       <Know />
       <Build />
       <Footer />
