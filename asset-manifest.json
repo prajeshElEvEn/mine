@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/mine/static/css/main.349a530f.css",
+    "main.js": "/mine/static/js/main.34f67327.js",
+    "static/media/mine.jpeg": "/mine/static/media/mine.69ad91f30f3c21131bf2.jpeg",
+    "static/media/diary-io.png": "/mine/static/media/diary-io.6cd747ad679f3506c033.png",
+    "index.html": "/mine/index.html",
+    "main.349a530f.css.map": "/mine/static/css/main.349a530f.css.map",
+    "main.34f67327.js.map": "/mine/static/js/main.34f67327.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.349a530f.css",
+    "static/js/main.34f67327.js"
+  ]
+}
