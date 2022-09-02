@@ -1,6 +1,7 @@
 .navbar-container
     padding: 1rem 0
-    border-bottom: 1px solid #8400ec
+    // border-bottom: 1px solid #8400ec
+    box-shadow: rgba(92, 10, 223, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset
     .navbar
         width: 70vw
         margin: 0 auto
@@ -49,7 +50,7 @@
                         font-size: 5rem
                         transition: all 0.3s ease-in-out
                         &:hover
-                            transform: scale(1.1)
+                            // transform: scale(1.1)
                     .title-right-bottom
                         font-weight: 700
                         font-size: 2rem
@@ -58,20 +59,21 @@
                 align-items: center
                 justify-content: center
                 gap: 1rem
-                border: 1px solid #8400ec
+                // border: 1px solid #8400ec
                 border-radius: 10px
                 padding: 0.8rem 0
                 font-size: 1.5rem
                 font-weight: 700
-                color: #8400ec
+                // color: #8400ec
                 transition: all 0.3s ease-in-out
                 cursor: pointer
+                background: #8400ec
+                box-shadow: rgb(136, 15, 184) 0px 20px 30px -10px
                 &:hover
-                    background: #8400ec
-                    color: #1b1b1b
+                    // color: #1b1b1b
                 svg
                     transform: rotate(180deg)
-                    fill:#8400ec
+                    // fill:#8400ec
 
         .home-right
             height: 50rem
@@ -79,6 +81,7 @@
             background: url(../assets/mine.jpeg)
             background-size: cover
             border-radius: 50%
+            box-shadow: rgba(93, 0, 214, 0.25) 0px 25px 50px -12px;
 
 .about-container
     width: 70vw
@@ -90,28 +93,35 @@
         flex-direction: column
         gap: 4rem
         .about-nav
-            padding: 1rem 4rem
-            border: 1px solid #8400ec
-            border-radius: 10px
+            padding: 0 1rem
+            border-left: 2px solid #8400ec
+            // border-radius: 10px
             font-size: 2rem
             font-weight: 700
             color: #8400ec
+            box-shadow: rgba(92, 10, 223, 0.137) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset
         .about-cards-container
             .about-cards
                 display: flex
                 align-items: center
                 justify-content: space-between
                 .about-card
-                    background: #8400ec
-                    width: 320px
-                    height: 350px
+                    // background: #8400ec
+                    background: rgb(27,27,27)
+                    background: linear-gradient(45deg, rgba(27,27,27,1) 0%, rgba(181,130,196,0.3981967787114846) 45%, rgba(132,0,236,1) 100%)
+                    // border: 1px solid #8400ec
+                    width: 350px
+                    height: 400px
                     border-radius: 10px
-                    padding: 1rem
+                    padding: 1rem 2rem
                     display: flex
                     flex-direction: column
                     justify-content: space-between
+                    transition: all 0.3s ease-in-out
+                    &:hover
+                        box-shadow: rgba(152, 88, 255, 0.25) 0px 30px 60px -12px, rgba(71, 0, 153, 0.3) 0px 18px 36px -18px
                     .about-card-top
-                        height: 280px
+                        height: 320px
                         display: flex
                         flex-direction: column
                         // align-items: center
@@ -128,7 +138,11 @@
                     .about-card-bottom
                         a
                             text-decoration: none
-                            color: #fff
+                            color: #8400ec
+                            display: flex
+                            align-items: center
+                            gap: 5px
+                            .l-text
                             &:hover
                                 text-decoration: underline
 
@@ -142,9 +156,10 @@
         flex-direction: column
         gap: 4rem
         .know-nav
-            padding: 1rem 4rem
-            border: 1px solid #8400ec
-            border-radius: 10px
+            padding: 0 1rem
+            border-left: 2px solid #8400ec
+            box-shadow: rgba(92, 10, 223, 0.137) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset
+            // border-radius: 10px
             font-size: 2rem
             font-weight: 700
             color: #8400ec
@@ -156,19 +171,104 @@
                 .tag
                     padding: 0.2rem 1.5rem
                     // border: 1px solid #8400ec
-                    background: #8400ec
+                    // background: #8400ec
+                    background: rgb(27,27,27)
+                    background: linear-gradient(135deg, rgba(27,27,27,1) 0%, rgba(181,130,196,0.9164040616246498) 0%, rgba(132,0,236,1) 100%)
                     border-radius: 50px
 
 
 .build-container
+    height: 100vh
     width: 70vw
     margin: 0 auto
     padding: 1rem 0
     .build
+        display: flex
+        flex-direction: column
+        gap: 4rem
+        .build-nav
+            padding: 0 1rem
+            border-left: 2px solid #8400ec
+            // border-radius: 10px
+            font-size: 2rem
+            font-weight: 700
+            color: #8400ec
+        .build-cards-container
+            .build-cards
+                display: flex
+                align-items: center
+                justify-content: space-between
+                .build-card
+                    width: 300px
+                    border: 1px solid #8400ec
+                    border-radius: 10px
+                    padding: 1rem
+                    .build-card-top
+                        height: 150px
+                        width: 100%
+                    .build-card-bottom
+                        .build-card-title
+                            font-weight: 500
+                            font-size: 2rem
+                        .links-container
+                            display: flex
+                            align-items: center
+                            justify-content: space-between
+                            .link-text
+                                // font-size: 14px
+                                color: #8d8d8d
+                            .links
+                                display: flex
+                                align-items: center
+                                gap: 0.5rem
+                                a
+                                    text-decoration: none
+                                    // border: 1px solid #8400ec
+                                    // padding: 0.5rem 0.8rem
+                                    svg
+                                        // transform: translateY(5px)
 
 .footer-container
+    height: 100vh
     width: 70vw
     margin: 0 auto
     padding: 1rem 0
+    display: flex
+    align-items: center
+    justify-content: center
     .footer
+        background: #8400ec
+        width: 100%
+        border-radius: 10px
+        padding: 4rem
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        gap: 2rem
+        .footer-nav
+            width: 100%
+            font-size: 2rem
+            font-weight: 700
+            // border-left: 2px solid #fff
+            // padding: 0 1rem
+        .contact
+            a
+                display: flex
+                align-items: center
+                gap: 1rem
+                text-decoration: none
+                color: #fff
+                font-weight: 900
+                font-size: 3rem
+                border-bottom: 1px solid #fff
+                padding: 0.2rem 3rem
+                // border-radius: 10px
+        .socials
+            .social
+                display: flex
+                align-items: center
+                gap: 1rem
+                a
+                    svg
 
